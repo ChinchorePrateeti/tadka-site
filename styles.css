@@ -1,0 +1,527 @@
+:root {
+    --bg-color: #000000;
+    --text-color: #E9EEE0;
+    --accent-color: #D4AF37;
+    --secondary-color: #f3c017;
+    --card-bg-color: #0e0e0d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.container {
+    /* background-color: aqua; */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+    /* color: aqua; */
+}
+h2{
+    text-align: center;
+    font-size: xx-large;
+}
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+.logo-image{
+    border-radius: 92px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: black;
+    font-weight: 550;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FF8C00;
+}
+
+/* Header and Navigation */
+header {
+    background-color: rgba(26, 26, 26, 0.9);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#navbar {
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    /* background: rgba(0, 0, 0, 0.5); Semi-transparent black */
+    color: white;
+    z-index: 1000;
+    padding: 10px 0;
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+    transition: background 0.3s ease;
+}
+#navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 10px;
+}
+
+#navbar .nav-links a {
+    color: white; /* Ensure links are white for contrast */
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+
+#navbar .nav-links a:hover {
+    color: #ffcd58; /* Highlight color for hover effect */
+}
+
+
+/* Current Offers Section */
+#current-offers {
+    background-color: #000000; /* Matches the header background */
+    color: #fff; /* White text for contrast */
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* #current-offers h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffcd58; /* Highlighting the title in the theme's accent color */
+  /* }  */
+  
+  .offers-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+  
+  .offer-card {
+    background: #fff;
+    border: 1px solid #ffcd58;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+  }
+  
+  /* .offer-card h3 {
+    font-size: 1.4rem;
+    color: #002b6a; /* Matches the header's primary color */
+    /* margin-bottom: 0.5rem; */
+  /* }  */
+  
+  /* .offer-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #555; /* Soft text for readability */
+  /* }  */
+  
+  .offer-btn {
+    display: inline-block;
+    background: #ffcd58; /* Accent button color */
+    color: #002b6a; /* Text color matches header */
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .offer-btn:hover {
+    background: #ffe18a; /* Slightly lighter on hover */
+    color: #001f4a; /* Darker text on hover */
+  }
+  
+  .offer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-menu-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 5px 0;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('D:/kripaB-site/images/tadka6hero.jpg');
+    /* background-color: aquamarine; */
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity for desired effect */
+    z-index: 1;
+}
+
+#hero .container {
+    position: relative;
+    z-index: 2;
+}
+/* #hero .container { */
+    /* background-color: rgba(26, 26, 26, 0.7); */
+    /* background-image: linear-gradient(); */
+    /* padding: 40px; */
+    /* border-radius: 10px; */
+/* } */
+
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* Menu Section */
+#menu {
+    padding: 80px 0;
+    background-color: var(--card-bg-color);
+}
+
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.menu-tab {
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.menu-tab.active {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.menu-content {
+    display: none;
+}
+
+.menu-content.active {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.menu-item {
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    color: var(--secondary-color);
+}
+
+.menu-item .price {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* About Section */
+#about {
+    padding: 80px 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-image {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+/* Offers Section */
+#offers {
+    padding: 80px 0;
+    background-color: var(--card-bg-color);
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.offer-card {
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.offer-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Location Section */
+#location {
+    padding: 80px 0;
+}
+
+.location-content {
+    display: flex;
+    gap: 40px;
+}
+
+.map-container {
+    flex: 1;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+#contact-form {
+    display: grid;
+    gap: 20px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--accent-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 80px 0;
+    background-color: var(--card-bg-color);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-image {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+.offers{
+    /* border: 4px solid red; */
+    height: 370px;
+    width: 400px;
+}
+/* Reviews Section */
+#reviews {
+    padding: 80px 0;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.review-card {
+    background-color: var(--card-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.stars {
+    color: var(--secondary-color);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.reviewer {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Reservations Section */
+#reservations {
+    padding: 80px 0;
+    background-color: var(--card-bg-color);
+}
+
+#reservation-form {
+    display: grid;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#reservation-form input,
+#reservation-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--accent-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Events Section */
+#events {
+    padding: 80px 0;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.event-card {
+    background-color: var(--card-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.event-date {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--card-bg-color);
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--secondary-color);
+}
+
+.copyright {
+    text-align: center;
+}
+.special-offer-image{
+    /* border: 30px solid red; */
+    border-radius: 20px;
+    height: 200px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .about-content,
+    .location-content {
+        flex-direction: column;
+    }
+
+    .about-image {
+        max-width: 100%;
+    }
+
+    .offers{
+        /* border: 4px solid red; */
+        height: 270px;
+        width: 300px;
+    }
+}
+

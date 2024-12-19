@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tadka Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- <img src="D:\kripaB-site\images\tadka6hero.jpg"> -->
+        <nav id="navbar">
+            <div class="container">
+                <a href="#" class="logo">Tadka Restaurant</a>
+                <ul class="nav-links">
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#offers">Offers</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#reservations">Reservations</a></li>
+                    <li><a href="#events">Events</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h1>Welcome to Elegant Eats & Drinks</h1>
+                <p>Experience exquisite cuisine and handcrafted cocktails in a vibrant atmosphere</p>
+                <a href="#reservations" class="btn">Make a Reservation</a>
+            </div>
+        </section>
+
+        <section id="current-offers">
+            <h2>Current Offers</h2>
+            <!-- <div class="offers-container"> -->
+              <!-- <div class="offer-card">
+                <h3>Buy 1 Get 1 Free</h3>
+                <p>Enjoy our special offer on all pizzas. Limited time only!</p>
+                <button class="btn">Order Now</button>
+              </div> -->
+              <div class="offers-grid">
+                <img src="/D:/kripaB-site/images/tadka13.jpg?height=300&width=400" alt="Gallery image 1" class="gallery-image offers">
+                <img src="/D:/kripaB-site/images/tadka71.jpg?height=300&width=400" alt="Gallery image 1" class="gallery-image offers">
+                <img src="/D:/kripaB-site/images/tadka8.jpg?height=300&width=400" alt="Gallery image 1" class="gallery-image offers">
+                <img src="/D:/kripaB-site/images/tadka9.jpg?height=300&width=400" alt="Gallery image 1" class="gallery-image offers">
+              </div>
+              <!-- <div class="offer-card">
+                <h3>20% Off on Desserts</h3>
+                <p>Satisfy your sweet tooth with a delightful discount.</p>
+                <button class="btn">Order Now</button>
+              </div> -->
+            <!-- </div> -->
+          </section>
+
+        <section id="menu">
+            <div class="container">
+                <h2>Our Menu</h2>
+                <div class="menu-tabs">
+                    <button class="menu-tab active" data-tab="food">Food Menu</button>
+                    <button class="menu-tab" data-tab="drinks">Drinks Menu</button>
+                </div>
+                <div class="menu-content active" id="food-menu">
+                    <div class="menu-item">
+                        <h3>Grilled paneer</h3>
+                        <p>Fresh paneer with spiced veggies and lemon juice</p>
+                        <span class="price">₹350</span>
+                    </div>
+                    <div class="menu-item">
+                        <h3>tandoori chicken</h3>
+                        <p>tandoori light/spiced chicken with green leaves</p>
+                        <span class="price">₹450</span>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Vegetarian Pasta</h3>
+                        <p>Handmade pasta with seasonal vegetables</p>
+                        <span class="price">₹400</span>
+                    </div>
+                </div>
+                <div class="menu-content" id="drinks-menu">
+                    <div class="menu-item">
+                        <h3>Magic Moments Vodka</h3>
+                        <p>Smooth Indian vodka, available in classic and flavored variants</p>
+                        <span class="price">₹749</span>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Kingfisher Premium Lager </h3>
+                        <p>Kingfisher Premium Lager: Crisp, refreshing, and iconic.</p>
+                        <span class="price">₹299</span>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Old Monk Rum</h3>
+                        <p>Discover our finest rums, from rich classics to vibrant spiced blends—your perfect tropical escape awaits</p>
+                        <span class="price">₹899</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <div class="about-content">
+                    <img src="/D:/kripaB-site/images/tadka14logo.jpg?height=300&width=400" alt="Gallery image 1" class="logo-image">
+                    <div class="about-text">
+                        <p>Welcome to Elegant Eats & Drinks, where culinary excellence meets warm hospitality. Our passion for food and drink is reflected in every dish and cocktail we serve.</p>
+                        <p>With a focus on locally-sourced ingredients and innovative recipes, we strive to create unforgettable dining experiences for our guests. Our talented chefs and mixologists work tirelessly to bring you the best flavors and presentations.</p>
+                        <p>Whether you're joining us for a romantic dinner, a night out with friends, or a special celebration, we're committed to making your visit exceptional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="offers">
+            <div class="container">
+                <h2>Special Offers</h2>
+                <div class="offers-grid">
+                    <div class="offer-card">
+                        <img src="/D:/kripaB-site/images/tadka15.jpg?height=300&width=400" alt="Gallery image 1" class="special-offer-image">
+                        <h3>Happy Hour</h3>
+                        <p>Enjoy 50% off all drinks from 4-6 PM, Monday to Friday</p>
+                    </div>
+                    <div class="offer-card">
+                        <img src="/D:/kripaB-site/images/tadka16.jpg?height=300&width=400" alt="Gallery image 1" class="special-offer-image">
+                        <h3>Date Night Special</h3>
+                        <p>3-course dinner for two with a bottle of wine</p>
+                    </div>
+                    <div class="offer-card">
+                        <img src="/D:/kripaB-site/images/tadka17.jpg?height=300&width=400" alt="Gallery image 1" class="special-offer-image">
+                        <h3>Sunday Brunch</h3>
+                        <p>All-you-can-eat brunch buffet with complimentary mimosas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="location">
+            <div class="container">
+                <h2>Location & Contact</h2>
+                <div class="location-content">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968459391!3d40.74844797932841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1616562308246!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Find Us</h3>
+                        <p>11 Mil Bypass Near Toll plaza Maksi Bhopal, Madhya Pradesh, India 462026</p>
+                        <p>Phone: +91 87706 64425</p>
+                        <form id="contact-form">
+                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <textarea name="message" placeholder="Message" required></textarea>
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="container">
+                <h2>Gallery</h2>
+                <div class="gallery-grid">
+                    <img src="/D:/kripaB-site/images/tadka1.jpg?height=300&width=400" alt="Gallery image 1" class="gallery-image">
+                    <img src="/D:/kripaB-site/images/tadka5.png?height=300&width=400" alt="Gallery image 2" class="gallery-image">
+                    <img src="D:/kripaB-site/images/tadka3.jpg?height=300&width=400" alt="Gallery image 3" class="gallery-image">
+                    <img src="/D:/kripaB-site/images/tadka2.jpg?height=300&width=400" alt="Gallery image 4" class="gallery-image">
+                    <img src="/D:/kripaB-site/images/tadka4.jpg?height=300&width=400" alt="Gallery image 5" class="gallery-image">
+                    <img src="/D:/kripaB-site/images/tadka10.jpg?height=300&width=400" alt="Gallery image 6" class="gallery-image">
+                    <img src="/D:/kripaB-site/images/tadka11.jpg?height=300&width=400" alt="Gallery image 6" class="gallery-image">
+                    <img src="/D:/kripaB-site/images/tadka12.jpg?height=300&width=400" alt="Gallery image 6" class="gallery-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews">
+            <div class="container">
+                <h2>Reviews & Testimonials</h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Absolutely amazing experience! The food was delicious and the atmosphere was perfect."</p>
+                        <p class="reviewer">- John Doe</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★☆</div>
+                        <p class="review-text">"Great service and fantastic cocktails. Will definitely be coming back!"</p>
+                        <p class="reviewer">- Jane Smith</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"The best restaurant in town. Every dish is a masterpiece. The ambiance is perfect for a romantic evening."</p>
+                        <p class="reviewer">- Mike Johnson</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reservations">
+            <div class="container">
+                <h2>Make a Reservation</h2>
+                <form id="reservation-form">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="phone" placeholder="Phone" required>
+                    <input type="date" name="date" required>
+                    <select name="time" required>
+                        <option value="">Select Time</option>
+                        <option value="18:00">6:00 PM</option>
+                        <option value="19:00">7:00 PM</option>
+                        <option value="20:00">8:00 PM</option>
+                        <option value="21:00">9:00 PM</option>
+                    </select>
+                    <select name="guests" required>
+                        <option value="">Number of Guests</option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6">6 Guests</option>
+                    </select>
+                    <button type="submit" class="btn">Make Reservation</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="events">
+            <div class="container">
+                <h2>Events & Live Music</h2>
+                <div class="events-grid">
+                    <div class="event-card">
+                        <h3>Live Jazz Night</h3>
+                        <p class="event-date">Every Friday</p>
+                        <p>Enjoy smooth jazz tunes while savoring our delicious cuisine.</p>
+                    </div>
+                    <div class="event-card">
+                        <h3>Wine Tasting</h3>
+                        <p class="event-date">First Saturday of the Month</p>
+                        <p>Sample a curated selection of wines from around the world.</p>
+                    </div>
+                    <div class="event-card">
+                        <h3>Chef's Table Experience</h3>
+                        <p class="event-date">Last Sunday of the Month</p>
+                        <p>An exclusive multi-course dinner prepared by our head chef.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Tadka Restaurant & Bar</h3>
+                    <p>11 Mil Bypass Near Toll plaza Maksi Bhopal, Madhya Pradesh, India 462026</p>
+                    <p>Contact us :- +91 87706 64425</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/tadka_restaurent_/" class="social-icon">Facebook</a>
+                    <a href="https://www.instagram.com/tadka_restaurent_/"  class="social-icon">Instagram</a>
+                    <a href="https://www.instagram.com/tadka_restaurent_/"  class="social-icon">Twitter</a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 Tadka Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
