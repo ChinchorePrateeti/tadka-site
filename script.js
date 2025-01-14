@@ -1,14 +1,16 @@
-document.addEventListener('DOMContentLoaded', function() {
+// document.addEventListener('DOMContentLoaded', function() {
 
     document.addEventListener('DOMContentLoaded', () => {
-        const offerButtons = document.querySelectorAll('.offer-btn');
+        const offerButtons = document.querySelectorAll('.mobile-menu-btn');
       
         offerButtons.forEach(button => {
           button.addEventListener('click', () => {
-            alert('Redirecting to the offer page!');
+            button.querySelectorAll('span').forEach(span =>{
+                span.style.display = 'none';
+            });
           });
         });
-      });
+    //   });
 
     // Menu tabs
     const menuTabs = document.querySelectorAll('.menu-tab');
