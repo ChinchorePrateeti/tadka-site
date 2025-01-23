@@ -309,6 +309,7 @@ header {
 
 .about-text p {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 /* Offers Section */
